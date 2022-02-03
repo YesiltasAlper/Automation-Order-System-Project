@@ -1,6 +1,6 @@
 # Automation-Order-System
 
-The photo of the project is on in the "issues"
+The photo of the project is in the "issues"
 
 if you want detailed information about what the project is please click
 https://www.youtube.com/playlist?list=PL4xTJlVkfPjqfaa21TgwBZSZEwzZcEXI-
