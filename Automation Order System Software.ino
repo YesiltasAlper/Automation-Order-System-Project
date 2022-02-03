@@ -417,6 +417,14 @@ void motor_off(){
     digitalWrite(IN4,LOW);   
 }
 
+void MOTOR_EMERGENCY_STOP(){   
+      
+    emr_stop_flag = true;  
+    sys_start_flag = false;
+    
+    motor_off();
+}
+
 void robot_active(){
     
     static int L = left_box_order;
@@ -581,12 +589,4 @@ void robot_turn_right_default(){
     }
 
     gripper.write(D_gripper);
-}
-
-void MOTOR_EMERGENCY_STOP(){   
-      
-    emr_stop_flag = true;  
-    sys_start_flag = false;
-    
-    motor_off();
 }
