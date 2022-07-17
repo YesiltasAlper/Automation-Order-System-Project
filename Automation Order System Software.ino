@@ -165,6 +165,7 @@ void loop() {
     }
 }
 
+
 int order_func1(){
   
   box:
@@ -352,6 +353,7 @@ void order_func2(int choice){
   delay(8000);
 }
 
+
 void count(){
   
    if(right_box_counter < right_box_counter_safety){
@@ -367,6 +369,7 @@ void count(){
    }
 
 }
+
 
 void order_status(){
 
@@ -410,12 +413,14 @@ void motor_on(){
     digitalWrite(IN4,LOW);      
 }
 
+
 void motor_off(){
 
     analogWrite(ENB,0);      
     digitalWrite(IN3,LOW);   
     digitalWrite(IN4,LOW);   
 }
+
 
 void MOTOR_EMERGENCY_STOP(){   
       
@@ -424,6 +429,7 @@ void MOTOR_EMERGENCY_STOP(){
     
     motor_off();
 }
+
 
 void robot_active(){
     
@@ -449,6 +455,7 @@ void robot_active(){
    order_status();
 }
 
+
 void robot_default(const int gripper_pos,const int y_axis_pos,const int z_axis_pos,const int x_axis_pos){
   
   gripper.write(gripper_pos);
@@ -456,7 +463,6 @@ void robot_default(const int gripper_pos,const int y_axis_pos,const int z_axis_p
   z_axis.write(z_axis_pos);
   x_axis.write(x_axis_pos);
 }
-
 
 
 void robot_get_product(const int gripper_pos,const int y_axis_pos,const int z_axis_pos,const int x_axis_pos){
@@ -481,7 +487,6 @@ void robot_get_product(const int gripper_pos,const int y_axis_pos,const int z_ax
 
   gripper.write(gripper_pos);
 }
-
 
 
 void robot_put_to_left(const int gripper_pos,const int y_axis_pos,const int z_axis_pos,const int x_axis_pos){
@@ -518,6 +523,7 @@ void robot_put_to_left(const int gripper_pos,const int y_axis_pos,const int z_ax
     }
 
 }
+
 
 void robot_turn_left_default(){
 
@@ -572,6 +578,7 @@ void robot_put_to_right(const int gripper_pos,const int y_axis_pos,const int z_a
     }
      
 }
+
 
 void robot_turn_right_default(){
 
