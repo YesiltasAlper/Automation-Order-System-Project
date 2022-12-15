@@ -1,8 +1,6 @@
 # Automation-Order-System
 
-The photo of the project is in the "issues"
-
-if you want detailed information about what the project is please click                    
+If you want detailed information about what the project is please click                    
 https://www.youtube.com/playlist?list=PL4xTJlVkfPjqfaa21TgwBZSZEwzZcEXI-                
 Total 5 minutes 35 seconds English spoken video.
 
